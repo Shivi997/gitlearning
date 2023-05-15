@@ -4,59 +4,18 @@ Create table Employees(
  salary money,
  Manager_Id int
  )
+ 
+ 
  Insert into Employees values(1,'Rohit',20000,3)
  Insert into Employees values(2,'Sangeeta',12000,5)
  Insert into Employees values(3,'Sajay',10000,5)
   Insert into Employees values(4,'Arun',25000,3)
- 
-    Insert into Employees values(5,'Zaheer',30000,null)
+Insert into Employees values(5,'Zaheer',30000,null)
+	
+	
 	Select  employee.Empname,
 		   manager.Empname as Managername
 		   FROM Employees employee
 LEFT JOIN Employees manager
 ON employee.Manager_Id = manager.Id order by employee.empname
 
-<!DOCTYPE html> 
-
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>Validation Page</title>
- <script> function submit() { if(!this.form.checkbox.checked) { }
-  else
-  { 
-    if(document.getElementById("txtpin").value == string.empty)
-  {
-     alert("Pin is Mandatory");
-     } } } 
-  </script>
-   </head> 
-  <body> 
-    <h2>Validate Me !!</h2>
-     <form> 
-        <p>
-            UserName<input type="text" minlength="6" maxlength="8" id="txtname">
-        </p> 
-    <p> 
-        Pin <input type="password" id="txtpin" >
-     </p> 
-    <p>
-        <label for="States">Choose a State:</label>
-
-<select name="States" id="cars">
-  <option value="Uttar Pradesh">UP</option>
-  <option value="Maharastra">Maharastra</option>
-  <option value="UttaraKhand">Uttarakhand</option>
-  <option value="Madhya Pradesh">MP</option>
-  <option value="Karnataka">Karnataka</option>
-  <option value="Gujrat">Gujrat</option>
-  <option value="Goa">Goa</option>
-  <option value="Himanchal">Himanchal Pradesh</option>
-</select>
-
-     </p> 
-     <p style="padding:25px;"> <button onclick="submit()">Check Form</button> 
-    </p> 
-    <p> <input type="checkbox" name="checkbox />
