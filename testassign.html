@@ -1,0 +1,67 @@
+<html> 
+<head> 
+<title> Validate Form</title> 
+</head> 
+<body> 
+<h3> Validate Me! </h3> 
+<formform ="Validate_form" onsubmit="submit_form()"> 
+<h4> USERNAME</h4> 
+<input type="text" placeholder="Enter UserName"/> 
+<h4 id="p1"> PIN</h4> 
+<input type="pin" placeholder="Enter your pin"/></br></br> 
+<label for="cars">States</label>
+<p>
+<!-- <input type="button" value="States"/> -->
+<select name="States" id="cars">
+    <option value="Uttar Pradesh">UP</option>
+    <option value="Maharastra">Maharastra</option>
+    <option value="UttaraKhand">Uttarakhand</option>
+    <option value="Madhya Pradesh">MP</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Gujrat">Gujrat</option>
+    <option value="Goa">Goa</option>
+    <option value="Himanchal">Himanchal Pradesh</option>
+  </select>
+</p>
+<input type="button" value="Check Form" onClick="create()"/>
+</form>
+<script type="text/javascript"> var letters = /^[A-Za-z]+$/; 
+if(n==''||e==''||p==''||cp==''){ 
+alert("Enter each details correctly"); 
+} 
+
+else if(!letters.test(n)) 
+
+{ 
+alert('Name is incorrect must contain alphabets only');  
+} 
+  else if(p!=cp) 
+
+{ 
+
+   alert("Pin is not matching");  
+
+} 
+else if(document.getElementById("p1").value.length > 12) 
+{ 
+alert("Pin maximum length is 8"); 
+} 
+else if(document.getElementById("p1").value.length < 6) 
+{ 
+alert("Pin minimum length is 8"); 
+} 
+</script> 
+</body> 
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
