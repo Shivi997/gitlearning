@@ -1,0 +1,25 @@
+﻿ 
+@model Student
+@{
+    ViewData["Title"] = "OnFind";
+}
+
+<h1>View Student Details</h1>
+</hr>
+@using (Html.BeginForm())
+{
+    <div>
+        <p>
+            Student Id: @Html.DisplayFor(e=>e.Id)
+            @Html.HiddenFor(e=>e.Id)
+        </p>
+        <p>StudentName:@Html.EditorFor(e=>e.StudentName)</p>
+        <p>Email:@Html.EditorFor(e=>e.Email)</p>
+        <p>Age:@Html.EditorFor(e=>e.age)</p>
+        <p>MobileNo:@Html.EditorFor(e=>e.mobileno)</p>
+        <p>
+            <button class="btn btn-success">Save Changes</button>
+        </p>
+    </div>
+}
+

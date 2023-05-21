@@ -1,0 +1,30 @@
+﻿@model Student
+@{
+    ViewData["Title"] = "OnAdd";
+}
+
+<h1>Student Registration</h1>
+<hr />
+@using (Html.BeginForm())
+{
+    <div>
+        <p>
+            StudentName:@Html.EditorFor(s=>s.StudentName)
+        </p>
+            <p>
+            Student Email:@Html.EditorFor(s=>s.Email)
+        </p>
+        <p>
+            Student Age:@Html.EditorFor(s=>s.age)
+        </p>
+        <p>
+            Student MobileNo:@Html.EditorFor(s=>s.mobileno)
+        </p>
+        <p>
+            <button>Add Student</button>
+        </p>
+    </div>
+
+    
+}
+
